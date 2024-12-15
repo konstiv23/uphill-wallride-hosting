@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content"
+        />
+        <title>Wallride</title>
+        <link rel="icon" href="/assets/favicon-1dJLq_fR.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+      <script type="module" crossorigin src="/assets/index-DzO61nFu.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-BlTyWIh3.css">
+    </head>
+
+    <body>
+        <section id="game-background-wrapper">
+            <img src="/assets/desert-4388204_cropped7_scaled-BPWFHQPo.jpg">
+        </section>
+        <section id="title-sreen">
+            <div id="wallride-logo-wrapper">
+                <div id="wallride-logo">
+                    <p>Uphill</p>
+                    <p>Wallride</p>
+                </div>
+            </div>
+            <div id="difficulty-select">
+                <button id="easy-button">
+                    <div>Easy</div>
+                    <div>Record: <span class="record-value"></span><div>
+                </button>
+                <button id="medium-button">
+                    <div>Medium</div>
+                    <div>Record: <span class="record-value"></span><div>
+                </button>
+                <button id="hard-button">
+                    <div>Hard</div>
+                    <div>Record: <span class="record-value"></span><div>
+                </button>
+            </div>
+            <footer>
+                <div>
+                    <p>© 2024 Konstantin Ivanov</p>
+                    <p id="cont">konstiv23 at gmail</p>
+                    <div id="asset-credits" onclick="showAssetCredits()">asset credits</div>
+                </div>
+                <div>
+                    v0.1a
+                </div>
+            </footer>
+        </section>
+        <div id="score-wrapper">
+            <div id="score"><span id="score-number">0</span></div>
+        </div>
+        <section id="hud-absolute">
+            <div id="hud-container">
+                <div id="hud-dummy"></div>
+                <div id="speedometer-wrapper">
+                    <div id="speedometer"></div>
+                    <div id="notches">
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="spinner-wrapper">
+            <div id="spinner"></div>
+        </div>
+        <section id="retry-screen" class="closed">
+            <div id="retry-screen-score-and-record">
+                <p>
+                    Score: 
+                    <span id="retry-screen-score-combo">
+                        <span id="retry-screen-score-value">0</span>
+                        <span id="retry-screen-score-stars"></span>
+                    </span>
+                </p>
+                <p>
+                    Record: 
+                    <span id="retry-screen-record-combo">
+                        <span id="old-record-value">0</span>
+                        <span id="retry-screen-record-stars"></span>
+                    </span>
+                </p>
+            </div>
+            <div id="new-record">
+                <p>New Record<span id="new-record-bang">!</span></p>
+                <p id="new-record-combo">
+                    <span id="new-record-value">0</span> 
+                    <span id="new-record-stars"></span>
+                </p>
+            </div>
+            <button id="retry-button">Retry</button>
+            <button id="difficulty-select-button">
+                Difficulty<br />Select
+            </button>
+        </section>
+        <div id="vignette-wrapper">
+            <div id="vignette"></div>
+        </div>
+        <script>
+            function showAssetCredits() {
+                alert("Assets: DIRT BIKE OFF ROAD BIKE LOW POLY by nabeelashrafphotography,\nRacer from Mixamo,\nDesert Landscape by grebmot");
+            }
+        </script>
+        <!-- <script src="built_js/disablePageReloadGesture.js" type="module"></script> -->
+    </body>
+</html>
